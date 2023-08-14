@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullseye Game!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <img id="overlay" src="Assets/images/overlay.png" alt="overlay">
+    <img id="obstacles" src="Assets/images/obstacles.png" alt="obstacles">
+    <img id="bull" src="Assets/images/bull.png" alt="bull">
+    <img id="egg" src="Assets/images/egg.png" alt="egg">
+    <img id="toad" src="Assets/images/toad.png" alt="toad">
+    <img id="toads" src="Assets/images/toads.png" alt="toads">
+    <img id="larva" src="Assets/images/larva.png" alt="larva">
+
+    <button id="volumeToggle">Unmute</button>
+    <audio id="audioPlayer" src="Assets/audios/GameSound.wav" loop autoplay></audio>
+    
+    <div class="game-container">
+        <div id="game"></div>
+        <button id="instructionsButton">Instructions</button>
+        <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+        <span class="close-button">&times;</span>
+            <h2>Instructions:</h2>
+                <p>Welcome to the game! Have fun and win the battle!</p>           
+        </div>
+        <div class="instructions-content">
+            <ul>
+            <li>Use the mouse to move the player in any direction you want.</li>
+            <li>Save the eggs from enemies to earn points.</li>
+            <li>Push the eggs towards the Bushes</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    
+
+    <script src="js/app.js"></script>
+    <script src="js/Egg.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Larva.js"></script>
+    <script src="js/Obstacle.js"></script>
+    <script src="js/Particle.js"></script>
+    <script src="js/Player.js"></script>
+    
+
+</body>
+</html>
+
